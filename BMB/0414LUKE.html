@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>LUKE HAPPY BIRTHDAY</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <div class="container text-center my-5 py-5 border border-dark">
+        <a href="https://twitter.com/nantong_bmb" target=_blank><img src="images/O.png" width="150" height="150"></a>
+        <h1 class="text-primary mt-4">2022/04/14</h1>
+        <h1>LUKE HAPPY BIRTHDAY</h1>
+        <p class="text-muted">搭檔任務秘密搜查組オタク二次創作網頁<br />版権元、関係者様とは一切関係ございません<br /><br />！可能有劇透成分，建議原作通關後再來遊玩！</p>
+    </div>
+
+    <main class="container my-5 pb-5">
+        <div class="text-center">
+            <div class="mb-3">
+                <img src="images/donut1.png" height="100" width="100" />
+                <h2 class="fw-bolder">點擊餵食</h2>
+                <p class="lead fw-normal text-muted">有好多好多甜甜圈</p>
+                <h1 class="fw-bolder" id="score">0</h1>
+            </div>
+            <div class="text-center" onclick="addToScore(1)" style="cursor: pointer;" id="finalscore">
+                <img src="images/1.jpg" id="doggie" style="width:80%" />
+                <br />
+                <p class="lead fw-normal text-muted mt-3">點擊下方甜甜圈一次+5</p>
+                <img src="images/donut0.png" height="75" onclick="addToScore(4)" />
+                <img src="images/donut0.png" height="75" onclick="addToScore(4)" />
+                <img src="images/donut0.png" height="75" onclick="addToScore(4)" />
+                <img src="images/donut0.png" height="75" onclick="addToScore(4)" />
+                <img src="images/donut0.png" height="75" onclick="addToScore(4)" />
+            </div>
+        </div>
+    </main>
+
+    <div class="text-center my-5 pb-5 bg-light">
+        <h1 class="pt-5"><i class="bi bi-gift-fill"></i></h1>
+        <h2 class="fw-bolder">點擊特典</h2>
+        <p class="lead fw-normal text-muted">點擊2022後解鎖</p>
+        <img class="my-4" src="images/gift2022.jpg" width="300" data-toggle="modal" data-target="#exampleModal" id="CG1" />
+    </div>
+
+    <div class="text-center py-5">
+        <h1><i class="bi bi-eraser-fill"></i></h1>
+        <h2 class="fw-bolder mb-3">重新餵食</h2>
+        <button id="resetscore" class="btn btn-outline-secondary">次數重置鈕</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="images/gift2022.jpg" style="width:100%;" id="CG1big" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark mt-5 py-4 text-center">
+        <p class="text-white">Copyright © <span id="y"></span> 路克亞倫愛愛</p>
+        <p class="mb-0 text-white text-muted">ルクアロオタク用愛發電的產物</p>
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/0414LUKE.js"></script>
+</body>
+</html>
